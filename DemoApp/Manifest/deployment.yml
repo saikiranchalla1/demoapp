@@ -16,11 +16,11 @@ spec:
         spec:
             containers:
             - name: k8s-demo
-              image: demoocr.azurecr.io/demoapp:latest
+              image: demoacrskc.azurecr.io/demoapp:latest
               ports:
               - containerPort: 80
             imagePullSecrets:
-            - name: regdemo
+            - name: demoacrsecret
 ---
 apiVersion: v1
 kind: Service
